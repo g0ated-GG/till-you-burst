@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://rda114v0ylwl"]
+
+[ext_resource type="Script" uid="uid://gsjtnx3u6kwc" path="res://common/tag.gd" id="1_lj1t6"]
+
+[node name="Container" type="Node"]
+script = ExtResource("1_lj1t6")
+code = "ITEM_CONTAINER"
+metadata/_custom_type_script = "uid://gsjtnx3u6kwc"

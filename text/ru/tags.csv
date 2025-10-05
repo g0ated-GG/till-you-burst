@@ -1,0 +1,66 @@
+Code,ru
+
+TAG_ITEM_CONTAINER,"Контейнер"
+TAG_ITEM_CONTAINER_DESC,"Этот объект может хранить другие объекты внутри."
+
+TAG_ITEM_EQUIPMENT,"Экипировка"
+TAG_ITEM_EQUIPMENT_DESC,"Этот предмет даёт характеристики или способности."
+
+TAG_ITEM_MATERIAL,"Материал"
+TAG_ITEM_MATERIAL_DESC,"Из материала можно создавать предметы."
+
+TAG_ITEM_FOOD,"Продукт"
+TAG_ITEM_FOOD_DESC,"Пригоден для употребления или готовки."
+
+TAG_ITEM_ATTACHED,"Привязанный"
+TAG_ITEM_ATTACHED_DESC,"Предмет привязан к владельцу, не занимает слот и не пропадает после смерти."
+
+
+
+TAG_SKILL_INNATE,"Врождённая"
+TAG_SKILL_INNATE_DESC,"Доступна без предмета."
+
+
+
+TAG_SKILL_ACTIVE,"Активная"
+TAG_SKILL_ACTIVE_DESC,"Активируется по нажатию кнопки."
+
+TAG_SKILL_ACTIVE,"Пассивная"
+TAG_SKILL_ACTIVE_DESC,"Работает постоянно."
+
+TAG_SKILL_AUTOCAST,"Автоприменение"
+TAG_SKILL_AUTOCAST_DESC,"Применяется при атаке."
+
+TAG_SKILL_TOGGLE,"Переключаемая"
+TAG_SKILL_TOGGLE_DESC,"Включается и отключается по нажатию кнопки."
+
+TAG_SKILL_CHANNELING,"Прерываемая"
+TAG_SKILL_CHANNELING_DESC,"Прерывается при движении, атаке или применении другой способности."
+
+TAG_SKILL_COMPATIBLE,"Совместимая"
+TAG_SKILL_COMPATIBLE_DESC,"Не прерывает движение, атаку или применение другой способности."
+
+
+
+TAG_SKILL_NO_TARGET,"Ненаправленная"
+TAG_SKILL_NO_TARGET_DESC,""
+
+TAG_SKILL_TARGET_POINT,"Направленная на точку"
+TAG_SKILL_TARGET_POINT_DESC,""
+
+TAG_SKILL_TARGET_AREA,"Направленная на область"
+TAG_SKILL_TARGET_AREA_DESC,""
+
+TAG_SKILL_TARGET_OBJECT,"Направленная на объект"
+TAG_SKILL_TARGET_OBJECT_DESC,""
+
+TAG_SKILL_TARGET_VECTOR,"Направленная по вектору"
+TAG_SKILL_TARGET_VECTOR_DESC,""
+
+
+
+TAG_SKILL_MELEE,"Ближний бой"
+TAG_SKILL_MELEE_DESC,"Работает на расстоянии атаки."
+
+TAG_SKILL_RANGE,"Дальний бой"
+TAG_SKILL_MELEE_DESC,"Применяется на расстоянии."

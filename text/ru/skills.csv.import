@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b6rxg6ak7hsk5"
+
+[deps]
+
+files=["res://text/ru/skills.ru.translation"]
+
+source_file="res://text/ru/skills.csv"
+dest_files=["res://text/ru/skills.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

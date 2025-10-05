@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://t3ysfgbwtyft"]
+
+[node name="Item" type="Node3D"]
+
+[node name="Tags" type="Node" parent="."]
+
+[node name="Characteristics" type="Node" parent="."]

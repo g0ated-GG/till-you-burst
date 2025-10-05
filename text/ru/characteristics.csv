@@ -1,0 +1,13 @@
+Code,ru
+
+CHARACTERISTIC_HP,"ОЖ"
+CHARACTERISTIC_HP_DESC,"Очки жизни. При достижении нуля персонаж теряет сознание."
+
+CHARACTERISTIC_EP,"ОЭ"
+CHARACTERISTIC_EP_DESC,"Очки энергии, которые можно потратить на использование способностей."
+
+CHARACTERISTIC_SPEED,"Скорость"
+CHARACTERISTIC_SPEED_DESC,"Скорость движения."
+
+CHARACTERISTIC_GOLD,"Золото"
+CHARACTERISTIC_GOLD_DESC,"Количество золотых монет, которые можно потратить на покупку снаряжения и расходников."

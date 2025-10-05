@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b44wj7vu5l7ah"]
+
+[ext_resource type="Script" uid="uid://dhmti7qrkyi5r" path="res://common/characteristic.gd" id="1_ofumi"]
+
+[node name="Ep" type="Node"]
+script = ExtResource("1_ofumi")
+code = "EP"
+metadata/_custom_type_script = "uid://dhmti7qrkyi5r"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://csu8tslxnm0tg"]
+
+[ext_resource type="Script" uid="uid://dyc62j4e064tr" path="res://common/character.gd" id="1_d3b2d"]
+
+[node name="Character" type="CharacterBody3D"]
+script = ExtResource("1_d3b2d")
+
+[node name="Tags" type="Node" parent="."]
+
+[node name="Characteristics" type="Node" parent="."]

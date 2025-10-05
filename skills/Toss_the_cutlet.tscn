@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct7tx2jct6wmd"]
+
+[ext_resource type="Script" uid="uid://dgqy0bd6tcpdf" path="res://common/skill.gd" id="1_1kb7v"]
+[ext_resource type="PackedScene" uid="uid://b6dl3yjy8g0iy" path="res://tags/TargetObject.tscn" id="2_abdtn"]
+
+[node name="Toss the cutlet" type="Node"]
+script = ExtResource("1_1kb7v")
+code = "TOSS_THE_CUTLET"
+metadata/_custom_type_script = "uid://dgqy0bd6tcpdf"
+
+[node name="TargetObject" parent="." instance=ExtResource("2_abdtn")]

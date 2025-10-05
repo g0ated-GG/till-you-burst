@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4gvf1xolmm6o"]
+
+[ext_resource type="Script" uid="uid://dhmti7qrkyi5r" path="res://common/characteristic.gd" id="1_ge8mb"]
+
+[node name="Speed" type="Node"]
+script = ExtResource("1_ge8mb")
+code = "SPEED"
+metadata/_custom_type_script = "uid://dhmti7qrkyi5r"

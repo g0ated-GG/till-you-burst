@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6dl3yjy8g0iy"]
+
+[ext_resource type="Script" uid="uid://gsjtnx3u6kwc" path="res://common/tag.gd" id="1_mhai1"]
+
+[node name="TargetObject" type="Node"]
+script = ExtResource("1_mhai1")
+code = "SKILL_TARGET_OBJECT"
+metadata/_custom_type_script = "uid://gsjtnx3u6kwc"

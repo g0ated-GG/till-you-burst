@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1yo47ts1rjjn"]
+
+[ext_resource type="Script" uid="uid://gsjtnx3u6kwc" path="res://common/tag.gd" id="1_rvhvy"]
+
+[node name="TargetPoint" type="Node"]
+script = ExtResource("1_rvhvy")
+code = "SKILL_TARGET_POINT"
+metadata/_custom_type_script = "uid://gsjtnx3u6kwc"

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://davkyy5g5ecq6"
+
+[deps]
+
+files=["res://text/ru/characteristics.ru.translation"]
+
+source_file="res://text/ru/characteristics.csv"
+dest_files=["res://text/ru/characteristics.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

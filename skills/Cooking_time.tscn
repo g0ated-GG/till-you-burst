@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://m5py4w0okoga"]
+
+[ext_resource type="Script" uid="uid://dgqy0bd6tcpdf" path="res://common/skill.gd" id="1_e77bs"]
+[ext_resource type="PackedScene" uid="uid://8kky1y04t5ih" path="res://tags/Channeling.tscn" id="2_ec2kl"]
+[ext_resource type="PackedScene" uid="uid://b6dl3yjy8g0iy" path="res://tags/TargetObject.tscn" id="3_4os6m"]
+
+[node name="Cooking Time" type="Node"]
+script = ExtResource("1_e77bs")
+code = "COOKING_TIME"
+metadata/_custom_type_script = "uid://dgqy0bd6tcpdf"
+
+[node name="Channeling" parent="." instance=ExtResource("2_ec2kl")]
+
+[node name="TargetObject" parent="." instance=ExtResource("3_4os6m")]

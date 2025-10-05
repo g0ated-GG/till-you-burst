@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://3no42vk4dkvg"]
+
+[ext_resource type="Script" uid="uid://ckcae6t2rl5d2" path="res://common/item.gd" id="1_yhq3o"]
+[ext_resource type="PackedScene" uid="uid://byk4b27muemc1" path="res://tags/Equipment.tscn" id="2_1y6dg"]
+[ext_resource type="PackedScene" uid="uid://ct7tx2jct6wmd" path="res://skills/Toss_the_cutlet.tscn" id="2_3tq72"]
+
+[node name="Cast iron skillet" type="Node3D"]
+script = ExtResource("1_yhq3o")
+code = "CAST_IRON_SKILLET"
+metadata/_custom_type_script = "uid://ckcae6t2rl5d2"
+
+[node name="Equipment" parent="." instance=ExtResource("2_1y6dg")]
+
+[node name="Toss the cutlet" parent="." instance=ExtResource("2_3tq72")]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
+height = 0.2
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, -0.75)
+radius = 0.1
+height = 0.5

@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://p0y3qjkmxud7"]
+
+[ext_resource type="Script" uid="uid://ckcae6t2rl5d2" path="res://common/item.gd" id="1_qoc08"]
+[ext_resource type="PackedScene" uid="uid://d0vjtbfa8iifq" path="res://skills/Hook.tscn" id="2_58jd0"]
+[ext_resource type="PackedScene" uid="uid://byk4b27muemc1" path="res://tags/Equipment.tscn" id="2_t1wwn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qoc08"]
+size = Vector3(1, 1, 2)
+
+[node name="Gourmet Hook" type="Node3D"]
+script = ExtResource("1_qoc08")
+code = "GOURMET_HOOK"
+metadata/_custom_type_script = "uid://ckcae6t2rl5d2"
+
+[node name="Equipment" parent="." instance=ExtResource("2_t1wwn")]
+
+[node name="Hook" parent="." instance=ExtResource("2_58jd0")]
+
+[node name="Chain" type="CSGTorus3D" parent="."]
+inner_radius = 0.15
+outer_radius = 0.25
+
+[node name="Links" type="Node3D" parent="."]
+
+[node name="HookMesh" type="CSGCombiner3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="HookMesh"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.5)
+radius = 0.1
+height = 0.5
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="HookMesh"]
+transform = Transform3D(0.70710677, -0.70710677, 3.090862e-08, 0, -4.371139e-08, -1, 0.70710677, 0.70710677, -3.090862e-08, -0.35, 0, 1.1)
+radius = 0.1
+height = 1.0
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="HookMesh"]
+transform = Transform3D(0.7071067, 0.7071068, -3.0908613e-08, 0, -4.371138e-08, -1, -0.7071068, 0.7071067, -3.090862e-08, -0.35, 0, 1.7)
+radius = 0.1
+height = 1.0
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="HookMesh"]
+transform = Transform3D(0.70710677, -0.70710677, 3.090862e-08, 0, -4.371139e-08, -1, 0.70710677, 0.70710677, -3.090862e-08, 0.3, 0, 1.7)
+radius = 0.1
+height = 1.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HookMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HookMesh/StaticBody3D"]
+shape = SubResource("BoxShape3D_qoc08")

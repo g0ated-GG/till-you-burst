@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://brnd5ejn5wx12"]
+
+[ext_resource type="Script" uid="uid://ckcae6t2rl5d2" path="res://common/item.gd" id="1_lq4lh"]
+[ext_resource type="PackedScene" uid="uid://iq6a4hd6wvwu" path="res://skills/Teleport.tscn" id="2_s2hxy"]
+[ext_resource type="PackedScene" uid="uid://byk4b27muemc1" path="res://tags/Equipment.tscn" id="2_vj6eo"]
+
+[node name="Master chef\'s knife" type="Node3D"]
+script = ExtResource("1_lq4lh")
+code = "MASTER_CHEFS_KNIFE"
+metadata/_custom_type_script = "uid://ckcae6t2rl5d2"
+
+[node name="Equipment" parent="." instance=ExtResource("2_vj6eo")]
+
+[node name="Teleport" parent="." instance=ExtResource("2_s2hxy")]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+radius = 0.1
+height = 0.5
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.75)
+size = Vector3(0.3, 0.1, 1)

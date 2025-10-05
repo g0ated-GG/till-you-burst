@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ummqw2d444kh"]
+
+[ext_resource type="Script" uid="uid://dhmti7qrkyi5r" path="res://common/characteristic.gd" id="1_uih7r"]
+
+[node name="Hp" type="Node"]
+script = ExtResource("1_uih7r")
+code = "HP"
+metadata/_custom_type_script = "uid://dhmti7qrkyi5r"

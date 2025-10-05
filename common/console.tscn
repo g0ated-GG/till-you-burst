@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://nk52kfr0ncyn"]
+
+[ext_resource type="Script" uid="uid://b1r6lrifcl85t" path="res://common/console.gd" id="1_02jee"]
+
+[node name="Console" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_02jee")
+
+[node name="History" type="RichTextLabel" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+scroll_following_visible_characters = true
+
+[node name="UserInput" type="CodeEdit" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+symbol_lookup_on_click = true
+code_completion_enabled = true
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="text_changed" from="UserInput" to="." method="_on_user_input_text_changed"]

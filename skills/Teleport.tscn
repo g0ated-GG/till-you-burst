@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://iq6a4hd6wvwu"]
+
+[ext_resource type="Script" uid="uid://dgqy0bd6tcpdf" path="res://common/skill.gd" id="1_jin4q"]
+[ext_resource type="PackedScene" uid="uid://c1yo47ts1rjjn" path="res://tags/TargetPoint.tscn" id="2_0n50b"]
+
+[node name="Teleport" type="Node"]
+script = ExtResource("1_jin4q")
+code = "TELEPORT"
+metadata/_custom_type_script = "uid://dgqy0bd6tcpdf"
+
+[node name="TargetPoint" parent="." instance=ExtResource("2_0n50b")]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://byk4b27muemc1"]
+
+[ext_resource type="Script" uid="uid://gsjtnx3u6kwc" path="res://common/tag.gd" id="1_8d17g"]
+
+[node name="Equipment" type="Node"]
+script = ExtResource("1_8d17g")
+code = "ITEM_EQUIPMENT"
+metadata/_custom_type_script = "uid://gsjtnx3u6kwc"

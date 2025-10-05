@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0vjtbfa8iifq"]
+
+[ext_resource type="Script" uid="uid://dgqy0bd6tcpdf" path="res://common/skill.gd" id="1_d7g4k"]
+[ext_resource type="PackedScene" uid="uid://c1yo47ts1rjjn" path="res://tags/TargetPoint.tscn" id="2_tdjou"]
+
+[node name="Hook" type="Node"]
+script = ExtResource("1_d7g4k")
+code = "HOOK"
+metadata/_custom_type_script = "uid://dgqy0bd6tcpdf"
+
+[node name="TargetPoint" parent="." instance=ExtResource("2_tdjou")]

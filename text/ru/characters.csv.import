@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dwc2epdf25xli"
+
+[deps]
+
+files=["res://text/ru/characters.ru.translation"]
+
+source_file="res://text/ru/characters.csv"
+dest_files=["res://text/ru/characters.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

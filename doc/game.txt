@@ -1,0 +1,21 @@
+Till you burst ("До отвала").
+=============================
+Gameplay features:
+	* DotA-like interface
+		- themes
+	* looting
+	* chests
+	* craft
+	* quests
+	* battles
+	* locations
+		- theme depends on quest or battle
+	* exploring
+	* fun
+-----------------------------
+Main character: Tooch ("Туч").
+-----------------------------
+Some items.
+Master chef's knife ("Нож шеф-повара") - Blink Dagger.
+Gourmet Hook ("Крюк гурмана") - Meat Hook.
+Toss the cutlet ("Подбросить котлету") - Walrus PUNCH!

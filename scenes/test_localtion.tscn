@@ -1,0 +1,107 @@
+[gd_scene load_steps=11 format=3 uid="uid://bq6rinxthlcwd"]
+
+[ext_resource type="PackedScene" uid="uid://c45c710p0s70j" path="res://characters/Tooch/tooch.tscn" id="1_4jqxc"]
+[ext_resource type="PackedScene" uid="uid://oniccofso0fg" path="res://common/hud.tscn" id="2_mookk"]
+[ext_resource type="PackedScene" uid="uid://d300qfjq03i0i" path="res://items/barrel.tscn" id="3_sl8pd"]
+[ext_resource type="PackedScene" uid="uid://p0y3qjkmxud7" path="res://items/gourmet_hook.tscn" id="3_tbiwq"]
+[ext_resource type="PackedScene" uid="uid://brnd5ejn5wx12" path="res://items/master_chef's_knife.tscn" id="4_3ax5m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4jqxc"]
+size = Vector3(32, 0.1, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t0brf"]
+size = Vector3(32, 2, 0.1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sl8pd"]
+
+[sub_resource type="Sky" id="Sky_tbiwq"]
+sky_material = SubResource("ProceduralSkyMaterial_sl8pd")
+
+[sub_resource type="Environment" id="Environment_3ax5m"]
+background_mode = 2
+sky = SubResource("Sky_tbiwq")
+
+[node name="TestLocaltion" type="Node3D"]
+
+[node name="Box" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Box"]
+size = Vector3(32, 0.1, 32)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box/CSGBox3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/CSGBox3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_4jqxc")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 16)
+size = Vector3(32, 2, 0.1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box/CSGBox3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/CSGBox3D2/StaticBody3D"]
+shape = SubResource("BoxShape3D_t0brf")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -16)
+size = Vector3(32, 2, 0.1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box/CSGBox3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/CSGBox3D3/StaticBody3D"]
+shape = SubResource("BoxShape3D_t0brf")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Box"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -16, 1, 0)
+size = Vector3(32, 2, 0.1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box/CSGBox3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/CSGBox3D4/StaticBody3D"]
+shape = SubResource("BoxShape3D_t0brf")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Box"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16, 1, 0)
+size = Vector3(32, 2, 0.1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Box/CSGBox3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box/CSGBox3D5/StaticBody3D"]
+shape = SubResource("BoxShape3D_t0brf")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, -7.5710346e-08, 4.3711385e-08, 0, 0.49999997, 0.86602545, -8.742278e-08, 0.86602545, -0.49999997, 0, 15, -8)
+
+[node name="Barrel" parent="." instance=ExtResource("3_sl8pd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+
+[node name="Barrel2" parent="." instance=ExtResource("3_sl8pd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 8)
+
+[node name="Barrel3" parent="." instance=ExtResource("3_sl8pd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -8)
+
+[node name="Barrel4" parent="." instance=ExtResource("3_sl8pd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -8)
+
+[node name="Tooch" parent="." node_paths=PackedStringArray("inventory") instance=ExtResource("1_4jqxc")]
+inventory = {
+0: NodePath("Gourmet Hook"),
+1: NodePath("Master chef\'s knife")
+}
+
+[node name="Gourmet Hook" parent="Tooch" instance=ExtResource("3_tbiwq")]
+visible = false
+
+[node name="Master chef\'s knife" parent="Tooch" instance=ExtResource("4_3ax5m")]
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3ax5m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("2_mookk")]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://8kky1y04t5ih"]
+
+[ext_resource type="Script" uid="uid://gsjtnx3u6kwc" path="res://common/tag.gd" id="1_wdt2x"]
+
+[node name="Channeling" type="Node"]
+script = ExtResource("1_wdt2x")
+code = "SKILL_CHANNELING"
+metadata/_custom_type_script = "uid://gsjtnx3u6kwc"

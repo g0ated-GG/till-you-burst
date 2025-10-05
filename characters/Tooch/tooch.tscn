@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://c45c710p0s70j"]
+
+[ext_resource type="PackedScene" uid="uid://csu8tslxnm0tg" path="res://common/character.tscn" id="1_n7bxn"]
+[ext_resource type="Script" uid="uid://h8fv4gi21118" path="res://characters/Tooch/tooch.gd" id="1_rluce"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kymyd"]
+radius = 0.75
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_s1jgt"]
+radius = 0.75
+
+[node name="Tooch" instance=ExtResource("1_n7bxn")]
+script = ExtResource("1_rluce")
+code = "TOOCH"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_kymyd")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Body" type="CSGMesh3D" parent="CSGCombiner3D" index="0"]
+mesh = SubResource("CapsuleMesh_s1jgt")
+
+[node name="LeftHand" type="CSGSphere3D" parent="CSGCombiner3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="RightHand" type="CSGSphere3D" parent="CSGCombiner3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="Belly" type="CSGSphere3D" parent="CSGCombiner3D" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0.5)
+radius = 0.75
+
+[node name="Head" type="CSGSphere3D" parent="CSGCombiner3D" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

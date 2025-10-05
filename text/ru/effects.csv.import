@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b7y7cmnk6pf1y"
+
+[deps]
+
+files=["res://text/ru/effects.ru.translation"]
+
+source_file="res://text/ru/effects.csv"
+dest_files=["res://text/ru/effects.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0
